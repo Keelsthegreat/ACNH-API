@@ -17,8 +17,8 @@ function FishDetails({fish}) {
                 <dd>{fish.availability.rarity}</dd>
               
               <dt>Price:</dt>
-              <dd>{fish.price}</dd>
-              <dd>{fish.price-cj}</dd>
+              <dd>{fish.price} Bells </dd>
+              <dd>{fish.price-cj} Bells </dd>
 
               <dt>CatchPhrase:</dt>
               <dd>{fish.catch-phrase}</dd>

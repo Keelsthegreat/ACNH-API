@@ -1,5 +1,5 @@
 import React from "react";
-import Fish from "../Components/Fish";
+
 
 function InsectDetails({bug}) {
 return(
@@ -9,7 +9,23 @@ return(
 
         <dl>
             <dt>Location:</dt>
-            <dd>{bug.ava}</dd>
+            <dd>{bug.availibility.location}</dd>
+            <dd>{bug.availibility.month-northern}</dd>
+            <dd>{bug.availibilty.month-southern}</dd>
+            <dd>{bug.availibility.time}</dd>
+
+            <dt>Rarity:</dt>
+            <dd>{bug.availibility.rarity}</dd>
+
+            <dt>Price:</dt>
+            <dd>{bug.price} Bells </dd>
+            <dd>{bug.price-cj} Bells </dd>
+
+            <dt>Catch Phrase:</dt>
+            <dd>{bug.catch-phrase}</dd>
+
+
+            
         </dl>
     </div>
 )
