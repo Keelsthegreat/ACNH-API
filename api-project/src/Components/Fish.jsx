@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import FishDetails from '../Models/FishDeets';
 
 function Fish() {
   const [fishList, setFishList] = useState([]);
@@ -19,14 +20,14 @@ function Fish() {
 // passing empty array as the second argument in the useEffect bc the array is used to determine when the effect should run
 
 // if empty only runs once
-function handleClick() {
-  setSelectedFish()
+function handleClick(fish) {
+  setSelectedFish(fish)
 }
   return (
     <div>
       <h1>Fish</h1>
       <ul>
-       
+       {Object.values(fishList)}
       </ul>
     </div>
   );
