@@ -10,8 +10,8 @@ return(
         <dl>
             <dt>Location:</dt>
             <dd>{bug.availibility.location}</dd>
-            <dd>{bug.availibility.month-northern}</dd>
-            <dd>{bug.availibilty.month-southern}</dd>
+            <dd>{bug.availibility['month-northern']}</dd>
+            <dd>{bug.availibilty['month-southern']}</dd>
             <dd>{bug.availibility.time}</dd>
 
             <dt>Rarity:</dt>
@@ -19,10 +19,10 @@ return(
 
             <dt>Price:</dt>
             <dd>{bug.price} Bells </dd>
-            <dd>{bug.price-cj} Bells </dd>
+            <dd>{bug['price-cj']} Bells </dd>
 
             <dt>Catch Phrase:</dt>
-            <dd>{bug.catch-phrase}</dd>
+            <dd>{bug['catch-phrase']}</dd>
 
 
 

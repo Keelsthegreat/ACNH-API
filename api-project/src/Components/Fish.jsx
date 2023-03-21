@@ -27,10 +27,11 @@ function handleClick(fish) {
     <div>
       <h1>Fish</h1>
       <ul>
-       {Object.values(fishList)}
+       {Object.values(fishList).map}
       </ul>
     </div>
   );
 }
-
+// use object.values allows us to transfer API data into an array of fish objects.
+// the axios and get request returns an objects corresponding to the IDs so we use object.value to extract just the values of the object which gives us an array.
 export default Fish;  

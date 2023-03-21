@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Fish from './Fish';
+import InsectDetails from '../Models/InsectDeets';
 
 function Insects() {
     const [insect, setInsect] = useState ([]);
