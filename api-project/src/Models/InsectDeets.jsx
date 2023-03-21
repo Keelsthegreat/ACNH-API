@@ -25,9 +25,16 @@ return(
             <dd>{bug.catch-phrase}</dd>
 
 
-            
+
         </dl>
     </div>
 )
 }
 
+// dt describes the term in the description or definition list. a dt is always followed by a dd. note that multiple dts in a row could indicate several items that are all defined by next dd.
+
+// dd represents the desription definiton or value or value of the dt.
+
+// note must be used in a dl tag
+
+export default InsectDetails ;
