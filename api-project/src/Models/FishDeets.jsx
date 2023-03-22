@@ -4,7 +4,7 @@ function FishDetails({fish}) {
     return(
         <div className="display">
             <h2>{fish.name['name-USen']}</h2>
-            <img className="image" src= {fish.image_url} alt ={fish.name['name-USen']}/>
+            <img className="image" src= {fish.image_uri} alt ={fish.name['name-USen']}/>
             <dl>
                 <dt>Location:</dt>
                 <dd>{fish.availability.location}</dd>

@@ -26,9 +26,12 @@ function handleClick(fish) {
   return (
     <div>
       <h1>Fish</h1>
-      <ul>
-       {Object.values(fishList).map}
-      </ul>
+       {Object.values(fishList).map((fish)=>{
+        <div key={fish.id} onClick = {() => handleClick(fish)}>
+          <FishDetails fish={fish}/>
+        </div>
+       })}
+     {selectedFish && <FishDetails fish={selectedFish}/>}
     </div>
   );
 }
