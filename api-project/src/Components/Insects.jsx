@@ -29,7 +29,7 @@ function handleClick(bug) {
   return (
     <div>
      <h1>Insects</h1>
-     <ul>
+     <ul className='grid'>
         {insect.map((bug)=>(
             <li key={bug.id} onClick = {() =>
             handleClick(bug)}>

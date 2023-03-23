@@ -30,7 +30,7 @@ function handleClick(fish) {
   return (
     <div>
       <h1>Fish</h1>
-      <ul>
+      <ul className='grid'>
         {fishList.map((fish)=> (
           <li key={fish.id} onClick = {() =>
           handleClick(fish)}>

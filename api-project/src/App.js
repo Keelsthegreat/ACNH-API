@@ -6,6 +6,7 @@ import SeaCreatures from './Components/SeaCreatures';
 import Villagers from './Components/Villagers'
 import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
+import Art from './Components/Art';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path= '/Villagers' element={<Villagers/>}/>
       <Route path= '/Insects' element={<Insects/>}/>
       <Route path= 'SeaCreatures' element={<SeaCreatures/>}/>
+      <Route path='/Art' element={<Art/>}/>
     </Routes>
 
    </div>

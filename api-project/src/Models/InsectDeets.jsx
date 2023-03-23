@@ -9,13 +9,13 @@ return(
 
         <dl>
             <dt>Location:</dt>
-            <dd>{bug.availibility.location}</dd>
-            <dd>{bug.availibility['month-northern']}</dd>
-            <dd>{bug.availibilty['month-southern']}</dd>
-            <dd>{bug.availibility.time}</dd>
+            <dd>{bug.availability.location}</dd>
+            <dd>{bug.availability['month-northern']}</dd>
+            <dd>{bug.availability['month-southern']}</dd>
+            <dd>{bug.availability.time}</dd>
 
             <dt>Rarity:</dt>
-            <dd>{bug.availibility.rarity}</dd>
+            <dd>{bug.availability.rarity}</dd>
 
             <dt>Price:</dt>
             <dd>{bug.price} Bells </dd>

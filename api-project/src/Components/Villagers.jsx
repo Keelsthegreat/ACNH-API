@@ -29,7 +29,7 @@ function Villagers() {
   return (
     <div>
         <h1>Villagers</h1>
-        <ul>
+        <ul className='grid'>
          {villagerList.map((villager)=> (
             <li key={villager.id} onClick = {() => handleClick(villager)}>
                 <img className='icon' src={villager.icon_uri} alt={villager.name['name-USen']} />

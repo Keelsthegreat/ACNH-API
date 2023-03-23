@@ -4,7 +4,6 @@ function ArtDetails({art}) {
   return (
     <div className='display'>
       <h2>{art.name['name-USen']}</h2>
-      <img className='image' src={art.image_uri} alt={art.name['name-USen']}/>
 
       <dl>
         <dt>Price:</dt>
@@ -23,4 +22,4 @@ function ArtDetails({art}) {
 // dd represents the description definition or value of the dt
 // note must be used in a dl tag
 
-export default ArtDeets
+export default ArtDetails ;

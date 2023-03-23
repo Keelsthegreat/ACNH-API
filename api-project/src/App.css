@@ -33,3 +33,7 @@
   max-height: 80%;
   margin-bottom: 10px;
 }
+
+.grid {
+  list-style-type: none;
+}
