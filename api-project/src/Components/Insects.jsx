@@ -22,6 +22,10 @@ function Insects() {
     // passing empty arrays as the second argument in the useEffect because the array is used to determine when the effect should run
     // if empty it only runs once 
 
+function handleClick(bug) {
+    setSelectedInsect(bug)
+}
+
   return (
     <div>
      <h1>Insects</h1>
