@@ -7,9 +7,10 @@ function NavBar(props) {
     <div className='phone-menu'>
         <ul>
             <li className='phone-menu-item'><Link to ='/'>Home</Link>
+            <img src="https://cdn.discordapp.com/attachments/692019678482006016/1088544157137641552/houseicon.png"/>
              </li>
-            <li className='phone-menu-item'><Link to ='/Fish'>Fish</Link>
-            <img className='img' src='https://acnhcritterpedia.com/images/ui/fish-transparent.png'/></li>
+            <li className='phone-menu-item fish'><Link to ='/Fish'>Fish</Link>
+            <img className='img'  src='https://acnhcritterpedia.com/images/ui/fish-transparent.png'/></li>
             <li className='phone-menu-item'><Link to ='/Villagers'>Villagers</Link>
             <img src="https://play-lh.googleusercontent.com/Smm7HUG0wUsIDyZTNTJagvFgYczqVVV65-rVXFpmZUJP4x0IsNe-LAhBfgxBp3hkrOc"/></li>
             <li className='phone-menu-item'><Link to ='/Insects'>Insects</Link>
