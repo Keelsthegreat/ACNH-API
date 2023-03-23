@@ -29,7 +29,7 @@ function SeaCreatures() {
   return (
     <div>
         <h1>Deep Sea Creatures</h1>
-        <ul>
+        <ul className='grid'>
             {seaCreaturesList.map((sc)=>(
                 <li key={sc.id} onClick = {() =>
                 handleClick(sc)}>

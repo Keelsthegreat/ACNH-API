@@ -7,11 +7,16 @@ import Villagers from './Components/Villagers'
 import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Art from './Components/Art';
+import { useState } from 'react';
 
 function App() {
+  const [showNav,setShowNav] = useState(true)
+  const handleNavClick = () => {
+    setShowNav(false)
+  }
   return (
    <div>
-    <NavBar/>
+    {showNav && <NavBar handleNavClick = {handleNavClick}/>}
     <Routes>
       {/* <Route path= '/' element={<Home/>}/> */}
       <Route path= '/Fish' element={<Fish/>}/>

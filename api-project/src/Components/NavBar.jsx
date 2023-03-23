@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function NavBar() {
+function NavBar(props) {
+  const {handleNavClick} = props
   return (
     <div className='phone-menu'>
         <ul>
