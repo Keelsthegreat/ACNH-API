@@ -8,13 +8,10 @@ function SeaCreatureDetails({sc}) {
 
       <dl>
         <dt>Availibility:</dt>
-        <dd>{sc.availibility}</dd>
-        <dd>{sc.availibility['month-northern']}</dd>
-        <dd>{sc.availibility['month-southern']}</dd>
-        <dd>{sc.availibility.time}</dd>
+        <dd>{sc.availability['month-northern']}</dd>
+        <dd>{sc.availability['month-southern']}</dd>
+        <dd>{sc.availability.time}</dd>
 
-        <dt>Rarity:</dt>
-        <dd>{sc.availibility.rarity}</dd>
 
         <dt>Price:</dt>
         <dd>{sc.price} Bells </dd>
