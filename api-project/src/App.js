@@ -15,6 +15,7 @@ function App() {
       {/* <Route path= '/' element={<Home/>}/> */}
       <Route path= '/Fish' element={<Fish/>}/>
       <Route path= '/Villagers' element={<Villagers/>}/>
+      <Route path= '/Insects' element={<Insects/>}/>
     </Routes>
 
    </div>

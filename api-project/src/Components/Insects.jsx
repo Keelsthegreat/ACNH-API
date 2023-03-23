@@ -5,31 +5,39 @@ import InsectDetails from '../Models/InsectDeets';
 function Insects() {
     const [insect, setInsect] = useState ([]);
 
-    useEffect(() => {
-        axios.get('http://acnhapi.com/v1a/bugs')
-        //api link for insects 
+    const [selectedInsect, setSelectedInsect] = useState (null)
 
-        .then(response => {
-            setInsect(response.data);
-        })
-        .catch(error => {
-            console.log(error);
-        });
-    }, [])
+    useEffect(() => {
+        async function fetchData() {
+        const response = await axios.get('http://acnhapi.com/v1a/bugs')
+        //api link for bugs^
+         setInsect(Object.values(response.data))
+         console.log(insect)   
+        }
+        fetchData()
+
+        }, []);
+
     //useEffect allows you to make API requests
     // passing empty arrays as the second argument in the useEffect because the array is used to determine when the effect should run
     // if empty it only runs once 
 
   return (
     <div>
-        <h1>Insects</h1>
-        <ul>
-            {insect.map(bugs => (
-                <li key={bugs.id}>
-                    {bugs.name['name-USen']}
-                </li>
-            ))}
-        </ul>
+     <h1>Insects</h1>
+     <ul>
+        {insect.map((bug)=>(
+            <li key={bug.id} onClick = {() =>
+            handleClick(bug)}>
+                <img className='icon' src={bug.icon_uri} alt={bug.name['name-USen']}/>
+                {selectedInsect && selectedInsect.id === bug.id && (
+                    <div>
+                        <InsectDetails bug={selectedInsect}/>
+                    </div>
+                )}
+            </li>
+        ))}
+     </ul>
     </div>
   );
 }
