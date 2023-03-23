@@ -7,8 +7,8 @@ function SeaCreatureDetails({sc}) {
       <img className='image' src={sc.image_uri} alt={sc.name['name-USen']}/>
 
       <dl>
-        <dt>Location:</dt>
-        <dd>{sc.availibility.location}</dd>
+        <dt>Availibility:</dt>
+        <dd>{sc.availibility}</dd>
         <dd>{sc.availibility['month-northern']}</dd>
         <dd>{sc.availibility['month-southern']}</dd>
         <dd>{sc.availibility.time}</dd>

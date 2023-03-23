@@ -16,6 +16,7 @@ function App() {
       <Route path= '/Fish' element={<Fish/>}/>
       <Route path= '/Villagers' element={<Villagers/>}/>
       <Route path= '/Insects' element={<Insects/>}/>
+      <Route path= 'SeaCreatures' element={<SeaCreatures/>}/>
     </Routes>
 
    </div>

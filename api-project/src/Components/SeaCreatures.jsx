@@ -18,19 +18,19 @@ function SeaCreatures() {
 
     }, []);
        
-    function handleClick(sc) {
-        setSelectedSeaCreature(sc)
-    }       
-
+    
     //useEffect allows you to make API requests
     // passing empty arrays as the second argument in the useEffect because the array is used to determine when the effect should run
     //if empty it only runs once
+    function handleClick(sc) {
+        setSelectedSeaCreature(sc)
+    }       
 
   return (
     <div>
         <h1>Deep Sea Creatures</h1>
         <ul>
-            {seaCreaturesList.map(()=>(
+            {seaCreaturesList.map((sc)=>(
                 <li key={sc.id} onClick = {() =>
                 handleClick(sc)}>
                     <img className='icon' src={sc.icon_uri} alt= {sc.name['name-USen']}/>
