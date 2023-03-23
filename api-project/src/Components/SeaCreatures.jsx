@@ -1,20 +1,27 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import SeaCreatureDetails from '../Models/SeaCreatureDeets';
 
 function SeaCreatures() {
-    const [seaCreatures, setSeaCreatures] = useState ([]);
+    const [seaCreaturesList, setSeaCreaturesList] = useState ([]);
+
+    const [selectedSeaCreature, setSelectedSeaCreature] = useState(null) 
 
     useEffect(() => {
-        axios.get('http://acnhapi.com/v1a/sea') //api link ^
+        async function fetchData() {
+          const response = await axios.get('http://acnhapi.com/v1a/sea') 
+          //api link ^
+          setSeaCreaturesList(Object.values(response.data))
+          console.log(seaCreaturesList)
+        }
+        fetchData()
+
+    }, []);
        
-       
-        .then(response =>{
-            setSeaCreatures(response.data);
-        })
-        .catch(error => {
-            console.log(error);
-        });
-    },[]);
+    function handleClick(sc) {
+        setSelectedSeaCreature(sc)
+    }       
+
     //useEffect allows you to make API requests
     // passing empty arrays as the second argument in the useEffect because the array is used to determine when the effect should run
     //if empty it only runs once
@@ -23,10 +30,16 @@ function SeaCreatures() {
     <div>
         <h1>Deep Sea Creatures</h1>
         <ul>
-            {seaCreatures.map(seaCreatures => (
-            <li key={seaCreatures.id}>
-                {seaCreatures.name['name-USen']}
-            </li>
+            {seaCreaturesList.map(()=>(
+                <li key={sc.id} onClick = {() =>
+                handleClick(sc)}>
+                    <img className='icon' src={sc.icon_uri} alt= {sc.name['name-USen']}/>
+                    {selectedSeaCreature && selectedSeaCreature.id === sc.id && (
+                        <div>
+                            <SeaCreatureDetails sc={selectedSeaCreature}/>
+                        </div>
+                    )}
+                </li>
             ))}
         </ul>
     </div>
