@@ -18,7 +18,7 @@ function FishDetails({fish}) {
               
               <dt>Price:</dt>
               <dd>{fish.price} Bells </dd>
-              <dd>{fish['price-cj']} Bells </dd>
+              <dd>{fish['price-cj']} Bells from CJ </dd>
 
               <dt>CatchPhrase:</dt>
               <dd>{fish['catch-phrase']}</dd>
