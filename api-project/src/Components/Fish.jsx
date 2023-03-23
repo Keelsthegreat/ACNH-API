@@ -30,16 +30,19 @@ function handleClick(fish) {
   return (
     <div>
       <h1>Fish</h1>
-       {fishList.map((fish)=> {
-         {console.log(fishList)}
-        return (
-        <div key={fish.id} onClick = {() => handleClick(fish)}>
-          <FishDetails fish={fish}/>
-        </div>
-
-        )
-       })}
-     {selectedFish && <FishDetails fish={selectedFish}/>}
+      <ul>
+        {fishList.map((fish)=> (
+          <li key={fish.id} onClick = {() =>
+          handleClick(fish)}>
+            <img className='icon' src={fish.icon_uri} alt={fish.name['name-USen']}/>
+            {selectedFish && selectedFish.id === fish.id && (
+              <div>
+                <FishDetails fish={selectedFish}/>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
