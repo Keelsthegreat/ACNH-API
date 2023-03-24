@@ -27,7 +27,7 @@ function handleClick(bug) {
 }
 
   return (
-    <div>
+    <div className='container'>
      <h1>Insects</h1>
      <ul className='grid'>
         {insect.map((bug)=>(

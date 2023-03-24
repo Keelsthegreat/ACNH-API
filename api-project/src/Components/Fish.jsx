@@ -28,7 +28,7 @@ function handleClick(fish) {
   setSelectedFish(fish)
 }
   return (
-    <div>
+    <div className='container'>
       <h1>Fish</h1>
       <ul className='grid'>
         {fishList.map((fish)=> (

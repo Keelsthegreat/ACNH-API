@@ -16,6 +16,7 @@ function App() {
   }
   return (
    <div>
+    <h1 className='homeHeader'>Animal Crossing New Horizons Guide</h1>
     {showNav && <NavBar handleNavClick = {handleNavClick}/>}
     <Routes>
       {/* <Route path= '/' element={<Home/>}/> */}
@@ -25,7 +26,7 @@ function App() {
       <Route path= 'SeaCreatures' element={<SeaCreatures/>}/>
       <Route path='/Art' element={<Art/>}/>
     </Routes>
-
+     <h4>Welcome to my ACNH guide! Here you will find information on the critterpedia, villagers and more!</h4>
    </div>
 );
 }

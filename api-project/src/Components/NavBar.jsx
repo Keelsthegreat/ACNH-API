@@ -20,6 +20,8 @@ function NavBar(props) {
 
             <li className='phone-menu-item'><Link to = 'Art'>Art</Link>
             <img src='https://play-lh.googleusercontent.com/wzo3uaa8evJkgaw3sawCZ5UV9uyzOojjKLzkR4rJSZToz20kPuUv9_1Cq4w_lf9LUQ'/></li>
+
+          <li className='phone-menu-item'>About Me</li>
         </ul>
     </div>
   )
