@@ -33,7 +33,12 @@ function Art() {
 
   return (
     <div className="carousel">
-        <img  className='banner' src="https://images-ext-2.discordapp.net/external/Qtey1ivblNw5bWkQUHJWEvALxTxzcHxHm0Es_V7vpqQ/%3Fq%3Dtbn%3AANd9GcQLWLKZdjdWQzGjwZDCydc-0f07jryjTj-wh9Kgzbd_5y2obltvjrDEMXVaufwyITilLCc%26usqp%3DCAU/https/encrypted-tbn0.gstatic.com/images" alt="" />
+      <div className = "banner">
+         <img src="https://images-ext-1.discordapp.net/external/TKN48jxMlKCg4MwfCR2HfEEW2YVkO8rCfMxKAq6g8hM/https/static1.thegamerimages.com/wordpress/wp-content/uploads/2020/06/Garden-Museum-via-Reddit.jpg?width=705&height=371" alt="" />
+
+      </div>
+
+      
       
       <ul className="carousel__slides">
         {artList.map((art, index) => (
