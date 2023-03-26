@@ -23,6 +23,7 @@ function App() {
       <Route path= '/Insects' element={<Insects/>}/>
       <Route path= 'SeaCreatures' element={<SeaCreatures/>}/>
       <Route path='/Art' element={<Art/>}/>
+      <Route path='/AboutMe' element={<AboutMe/>}/>
     </Routes>
      <h4>Welcome to my ACNH guide! Here you will find information on the critterpedia, villagers and more!</h4>
    </div>

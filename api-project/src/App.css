@@ -13,15 +13,26 @@ body {
   border-radius: 80px;
   padding: 20px;
   box-sizing: border-box;
+  text-align: center;
+  font-family: 'FinkHeavy', Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ 
   
+}
+
+.phone-menu-name {
+  margin-bottom: 10px;
 }
 
 .phone-menu-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 300px;
-  height: auto;
-  gap: 10px;
+  height: 300px;
+  margin-bottom: 65px;
+  gap: 15px;
 }
 
 .phone-menu-item {
@@ -31,7 +42,7 @@ body {
   justify-content: center;
   background-color: #f5f5f5;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 28px;
+  border-radius: 12px;
   padding: 2px;
   box-sizing: border-box;
   text-align: center;
@@ -39,6 +50,7 @@ body {
   font-family: 'acnh';
   color: #6d4c41;
   transition: transform 0.2s ease-in-out;
+  height: 86px;
 }
 
 .phone-menu-item:hover {
@@ -59,9 +71,10 @@ body {
 }
 
 .phone-menu-item img {
-  max-width: 80%;
-  max-height: 80%;
-  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 12px;
+  
 }
 
 
@@ -226,4 +239,17 @@ body {
   background-color: #e8e8e8;
 }
 
+li#li1-clicked{}
+
+li#li2-clicked{}
+
+li#li3-clicked{}
+
+li#li4-clicked{}
+
+li#li5-clicked{}
+
+li#li6-clicked{}
+
+li#li7-clicked{}
 
