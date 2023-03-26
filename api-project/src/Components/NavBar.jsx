@@ -38,7 +38,7 @@ function NavBar() {
             </li>
             <li className='phone-menu-item art'>
                 <Link to='/Art'>
-                    <img src='https://play-lh.googleusercontent.com/wzo3uaa8evJkgaw3sawCZ5UV9uyzOojjKLzkR4rJSZToz20kPuUv9_1Cq4w_lf9LUQ' alt="Art Icon" className="phone-menu-icon" />
+                    <img src='https://cdn.discordapp.com/attachments/692019678482006016/1089639477015740416/Untitled_design_1.png' alt="Art Icon" className="phone-menu-icon" />
                     Art
                 </Link>
             </li>

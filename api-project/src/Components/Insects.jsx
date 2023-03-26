@@ -27,13 +27,16 @@ function handleClick(bug) {
 }
 
   return (
-    <div className='villagers-grid insectsPage'>
+    <section className = "insects-page">
+
+    <div>
      <h1>Insects</h1>
-     <ul>
+     <h3> Here You'll find infromation on insects spawn time, seasons,locations, rarity and prices.</h3>
+     <ul className = "insect-grid">
         {insect.map((bug)=>(
-            <li className= "villager-card" key={bug.id} onClick = {() =>
-            handleClick(bug)}>
-                <img className='icon' src={bug.icon_uri} alt={bug.name['name-USen']}/>
+            <li key={bug.id} onClick = {() =>
+                handleClick(bug)}>
+                <img className='insect-icon' src={bug.icon_uri} alt={bug.name['name-USen']}/>
                 {selectedInsect && selectedInsect.id === bug.id && (
                     <div>
                         <InsectDetails bug={selectedInsect}/>
@@ -43,6 +46,7 @@ function handleClick(bug) {
         ))}
      </ul>
     </div>
+</section>
   );
 }
 

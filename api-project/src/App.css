@@ -133,7 +133,7 @@ body {
 .carousel__button--next {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 68%;
   transform: translate(-50%, -50%);
   z-index: 1;
   background: transparent;
@@ -186,3 +186,31 @@ body {
 .carousel__indicator--active {
   background-color: #000;
 }
+
+
+
+.insect-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.insect-grid li {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insect-grid li:hover {
+  background-color: #e8e8e8;
+}
+
+
