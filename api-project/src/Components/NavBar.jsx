@@ -20,7 +20,7 @@ function NavBar() {
             </li>
             <li className='phone-menu-item villagers'>
                 <Link to='/Villagers'>
-                    <img src="https://play-lh.googleusercontent.com/Smm7HUG0wUsIDyZTNTJagvFgYczqVVV65-rVXFpmZUJP4x0IsNe-LAhBfgxBp3hkrOc" alt="Villagers Icon" className="phone-menu-icon" />
+                    <img src="https://pbs.twimg.com/profile_images/1481028496960884737/0TV2hqEf_400x400.jpg" alt="Villagers Icon" className="phone-menu-icon" />
                     Villagers
                 </Link>
             </li>
@@ -43,7 +43,9 @@ function NavBar() {
                 </Link>
             </li>
             <li className='phone-menu-item about'>
-                About Me
+              <Link to='/AboutMe'>
+                <img src='https://avatars.githubusercontent.com/u/107443714?v=4' alt='About Me Icon'/> About Me
+              </Link>
             </li>
         </ul>
     </div>
