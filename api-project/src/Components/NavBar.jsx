@@ -3,84 +3,6 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState('');
-  const [li1, setli1] = useState('false')
-  const [li2, setli2] = useState('false')
-  const [li3, setli3] = useState('false')
-  const [li4, setli4] = useState('false')
-  const [li5, setli5] = useState('false')
-  const [li6, setli6] = useState('false')
-  const [li7, setli7] = useState('false')
-  // UseStates are for different banners on each page
-
-  const handleClick1 = () => {
-    setli1(true)
-    setli2(false)
-    setli3(false)
-    setli4(false)
-    setli5(false)
-    setli6(false)
-    setli7(false)
-  }
-
-  const handleClick2 = () => {
-    setli1(false)
-    setli2(true)
-    setli3(false)
-    setli4(false)
-    setli5(false)
-    setli6(false)
-    setli7(false)
-  }
-
-  const handleClick3 = () => {
-    setli1(false)
-    setli2(false)
-    setli3(true)
-    setli4(false)
-    setli5(false)
-    setli6(false)
-    setli7(false)
-  }
-
-  const handleClick4 = () => {
-    setli1(false)
-    setli2(false)
-    setli3(false)
-    setli4(true)
-    setli5(false)
-    setli6(false)
-    setli7(false)
-  }
-
-  const handleClick5 = () => {
-    setli1(false)
-    setli2(false)
-    setli3(false)
-    setli4(false)
-    setli5(true)
-    setli6(false)
-    setli7(false)
-  }
-
-  const handleClick6 = () => {
-    setli1(false)
-    setli2(false)
-    setli3(false)
-    setli4(false)
-    setli5(false)
-    setli6(true)
-    setli7(false)
-  }
-
-  const handleClick7 = () => {
-    setli1(false)
-    setli2(false)
-    setli3(false)
-    setli4(false)
-    setli5(false)
-    setli6(false)
-    setli7(true)
-  }
 
 
 
@@ -91,8 +13,7 @@ function NavBar() {
       <ul className='phone-menu-list'>
         <li
           className='phone-menu-item home'
-          id = {li1 ? 'li1-clicked': ''} 
-          onClick = {handleClick1}
+         
           onMouseOver={() => setActiveLink('Home')}
           onMouseOut={() => setActiveLink('')}
           >
@@ -107,8 +28,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item fish'
-          id = {li2 ?  'li2-clicked': ''}
-          onClick= {handleClick2}
+         
           onMouseOver={() => setActiveLink('Fish')}
           onMouseOut={() => setActiveLink('')}
         >
@@ -123,8 +43,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item villagers'
-          id = {li3 ? 'li3-clicked' : ''}
-          onClick = {handleClick3}
+        
           onMouseOver={() => setActiveLink('Villagers')}
           onMouseOut={() => setActiveLink('')}
         >
@@ -139,8 +58,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item insects'
-          id = {li4 ? 'li4-clicked':''}
-          onClick = {handleClick4}
+         
           onMouseOver={() => setActiveLink('Insects')}
           onMouseOut={() => setActiveLink('')}
         >
@@ -155,8 +73,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item sea-creatures'
-          id = {li5 ? 'li5-clicked': ''}
-          onClick = {handleClick5}
+          
           onMouseOver={() => setActiveLink('Sea Creatures')}
           onMouseOut={() => setActiveLink('')}
         >
@@ -171,8 +88,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item art'
-          id = {li6 ? 'li6-clicked': ''}
-          onClick = {handleClick6}
+          
           onMouseOver={() => setActiveLink('Art')}
           onMouseOut={() => setActiveLink('')}
         >
@@ -187,8 +103,7 @@ function NavBar() {
         </li>
         <li
           className='phone-menu-item about'
-          id = {li7 ? 'li7-clicked': ''}
-          onClick = {handleClick7}
+          
           onMouseOver={() => setActiveLink('About Me')}
           onMouseOut={() => setActiveLink('')}
         >

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Fish from './Components/Fish'
 import Insects from './Components/Insects';
@@ -8,16 +8,16 @@ import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Art from './Components/Art';
 import AboutMe from './Components/AboutMe';
-import { useState } from 'react';
+import Home from  './Components/Home'
 
 function App() {
 
   return (
    <div>
-    <h1 className='homeHeader'>Animal Crossing New Horizons Guide</h1>
+    
      <NavBar/>
     <Routes>
-      {/* <Route path= '/' element={<Home/>}/> */}
+      <Route path= '/' element={<Home/>}/>
       <Route path= '/Fish' element={<Fish/>}/>
       <Route path= '/Villagers' element={<Villagers/>}/>
       <Route path= '/Insects' element={<Insects/>}/>
@@ -25,7 +25,7 @@ function App() {
       <Route path='/Art' element={<Art/>}/>
       <Route path='/AboutMe' element={<AboutMe/>}/>
     </Routes>
-     <h4>Welcome to my ACNH guide! Here you will find information on the critterpedia, villagers and more!</h4>
+     
    </div>
 );
 }
