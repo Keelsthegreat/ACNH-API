@@ -28,6 +28,12 @@ function Villagers() {
     
   return (
     <div className='villagers-grid'>
+        <div className='banner'>
+            <img src='https://media.discordapp.net/attachments/692019678482006016/1089611305540927559/IMG_5181.jpg?width=705&height=397'/>
+        </div>
+        <div className = "banner">
+          <img src =''/>
+        </div>
         
        {villagerList.map((villager)=> (
             <div className='villager-card' key={villager.id} onClick = {() => handleClick(villager)}>

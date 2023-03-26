@@ -33,6 +33,8 @@ function Art() {
 
   return (
     <div className="carousel">
+        <img  className='banner' src="https://images-ext-2.discordapp.net/external/Qtey1ivblNw5bWkQUHJWEvALxTxzcHxHm0Es_V7vpqQ/%3Fq%3Dtbn%3AANd9GcQLWLKZdjdWQzGjwZDCydc-0f07jryjTj-wh9Kgzbd_5y2obltvjrDEMXVaufwyITilLCc%26usqp%3DCAU/https/encrypted-tbn0.gstatic.com/images" alt="" />
+      
       <ul className="carousel__slides">
         {artList.map((art, index) => (
           <li

@@ -29,6 +29,10 @@ function handleClick(fish) {
 }
   return (
     <div className='villagers-grid'>
+      <div className = "banner">
+
+      <img  src='https://media.discordapp.net/attachments/692019678482006016/1089611269688012942/IMG_5192.jpg?width=705&height=397'/>
+      </div>
       <h1>Fish</h1>
       <ul className='grid'>
         {fishList.map((fish)=> (

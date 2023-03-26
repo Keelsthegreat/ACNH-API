@@ -27,7 +27,10 @@ function SeaCreatures() {
     }       
 
   return (
-    <div className='container'>
+ <div className='container'>
+        <div className = "banner">
+            <img src =''/>
+        </div>
         <h1>Deep Sea Creatures</h1>
         <ul className='grid'>
             {seaCreaturesList.map((sc)=>(
