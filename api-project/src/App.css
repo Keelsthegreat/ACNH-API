@@ -45,6 +45,19 @@ body {
   transform: scale(1.05);
 }
 
+.phone-menu-item:hover:after {
+  content: attr(data-name);
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .phone-menu-item img {
   max-width: 80%;
   max-height: 80%;

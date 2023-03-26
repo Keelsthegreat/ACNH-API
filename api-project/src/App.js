@@ -7,6 +7,7 @@ import Villagers from './Components/Villagers'
 import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Art from './Components/Art';
+import AboutMe from './Components/AboutMe';
 import { useState } from 'react';
 
 function App() {
