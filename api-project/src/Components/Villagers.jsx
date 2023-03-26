@@ -28,10 +28,9 @@ function Villagers() {
     
   return (
     <div className='villagers-grid'>
-        <h1>Villagers</h1>
-        <ul className='grid'>
-         {villagerList.map((villager)=> (
-            <li  className='villager-card' key={villager.id} onClick = {() => handleClick(villager)}>
+        
+       {villagerList.map((villager)=> (
+            <div className='villager-card' key={villager.id} onClick = {() => handleClick(villager)}>
                 <img className='icon' src={villager.icon_uri} alt={villager.name['name-USen']} />
                 <p>{villager.name['name-USen']}</p>
                 {selectedVillager && selectedVillager.id === villager.id && (
@@ -40,14 +39,13 @@ function Villagers() {
                         <VillagerDetails villager={selectedVillager}/>
                     </div>
                 )}
-            </li>
+            </div>
 
          ))}
-        </ul>
-    
-    
+        
     </div>
   )
 }
+
 
 export default Villagers;

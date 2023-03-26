@@ -10,14 +10,11 @@ import Art from './Components/Art';
 import { useState } from 'react';
 
 function App() {
-  const [showNav,setShowNav] = useState(true)
-  const handleNavClick = () => {
-    setShowNav(false)
-  }
+
   return (
    <div>
     <h1 className='homeHeader'>Animal Crossing New Horizons Guide</h1>
-    {showNav && <NavBar handleNavClick = {handleNavClick}/>}
+     <NavBar/>
     <Routes>
       {/* <Route path= '/' element={<Home/>}/> */}
       <Route path= '/Fish' element={<Fish/>}/>

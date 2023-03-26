@@ -27,11 +27,11 @@ function handleClick(bug) {
 }
 
   return (
-    <div className='container'>
+    <div className='villagers-grid insectsPage'>
      <h1>Insects</h1>
-     <ul className='grid'>
+     <ul>
         {insect.map((bug)=>(
-            <li key={bug.id} onClick = {() =>
+            <li className= "villager-card" key={bug.id} onClick = {() =>
             handleClick(bug)}>
                 <img className='icon' src={bug.icon_uri} alt={bug.name['name-USen']}/>
                 {selectedInsect && selectedInsect.id === bug.id && (
