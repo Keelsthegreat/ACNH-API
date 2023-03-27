@@ -105,6 +105,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 21px;
 }
 
 .villager-card img {
@@ -121,6 +122,7 @@ body {
 .villager-card p {
   margin: 5px 0;
   text-align: center;
+  
 }
 
 .carousel {
@@ -131,7 +133,7 @@ body {
   margin: 2rem;
 }
 
-.carousel__slides {
+.carouselSlides {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -141,7 +143,7 @@ body {
   overflow: hidden;
 }
 
-.carousel__slide {
+.carouselSlide {
   position: absolute;
   top: 0;
   left: 0;
@@ -151,18 +153,18 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.carousel__slide--active {
+.carouselSlide--active {
   opacity: 1;
 }
 
-.carousel__image {
+.carouselImage {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.carousel__button--prev,
-.carousel__button--next {
+.carouselButton--prev,
+.carouselButton--next {
   position: absolute;
   top: 50%;
   left: 68%;
@@ -175,27 +177,27 @@ body {
   
 }
 
-.carousel__button--prev {
+.carouselButton--prev {
   left: 30%;
 }
 
-.carousel__button--next {
+.carouselButton--next {
   right: 30%;
 }
 
-.carousel__button--prev:focus,
-.carousel__button--next:focus {
+.carouselButton--prev:focus,
+.carouselButton--next:focus {
   outline: none;
 }
 
-.carousel__button--prev:hover,
-.carousel__button--next:hover {
+.carouselButton--prev:hover,
+.carouselButton--next:hover {
   color: #ccc;
 }
 
 @media (max-width: 768px) {
-  .carousel__button--prev,
-  .carousel__button--next {
+  .carouselButton--prev,
+  .carouselButton--next {
     font-size: 1.5rem;
   }
 }
@@ -290,61 +292,15 @@ body {
  border-radius: 25px;
 }
 
-.homeBanner {
-  position:absolute;
-  top:0;
-  right:0;
-  width: 82.8%;
-  height: 30%;
-  background-image: url('https://images-ext-2.discordapp.net/external/yp5Kn5VPhB6O6JZeBtBB6yftc9-lILifOwhI6RatBOo/https/acnh.co/assets/img/animal-crossing-villagers.jpg?width=705&height=397');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 25px;
-  
-}
 
-.fishBanner {
-  position:absolute;
-  top:0;
-  right:0;
-  width: 82.8%;
-  height: 30%;
-  background-image: url('https://media.discordapp.net/attachments/692019678482006016/1089611269688012942/IMG_5192.jpg?width=705&height=397');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 25px;
+
+
  
-}
 
-.artBanner {
-  position:absolute;
-  top:0;
-  right:0;
-  width: 82.8%;
-  height: 30%;
-  background-image: url("https://images-ext-1.discordapp.net/external/TKN48jxMlKCg4MwfCR2HfEEW2YVkO8rCfMxKAq6g8hM/https/static1.thegamerimages.com/wordpress/wp-content/uploads/2020/06/Garden-Museum-via-Reddit.jpg?width=705&height=371");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-radius: 25px;
 
-}
 
-.aboutBanner {
-  position:absolute;
-  top:0;
-  right:0;
-  width: 82.8%;
-  height: 30%;
-  background-image: url("https://media.discordapp.net/attachments/692019678482006016/1089611305306050650/IMG_5182.jpg?width=705&height=397");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 25px;
-  
-}
+
+
 
 .header {
 text-align: center;
@@ -361,15 +317,85 @@ font-size: 30px;
   font-size: 22px;
 }
 
+
+
 .speech-bubble {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
-  z-index: 1;
+  font-size: 16px;
+  bottom:10px;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 500px;
+  padding: 20px;
+  border-radius: 23%;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-left: -4%;
 }
 
+.speech-bubble:before {
+  content: "";
+  font-size: 16px;
+  position: absolute;
+  bottom:10px;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  
+  
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+
+}
+
+.blathers {
+ position: absolute;
+ left: 3px;
+ bottom: -35%;
+}
+
+.homeHeader {
+text-align: center;
+font-size: 45px;
+margin-top: -400px ;
+}
+
+.homepTag{
+text-align: center;
+font-size: 32px;
+}
+
+.hPic {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 210px;
+  text-align: center;
+  width: 100%;
+
+}
+.hPicc{
+  width: 1500px;
+  height: auto;
+}
+
+.amDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.amLinks{
+  display: flex;
+  justify-content: center;
+}

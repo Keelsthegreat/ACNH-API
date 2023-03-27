@@ -17,15 +17,17 @@ function Villagers() {
         }
         fetchData();
     }, []);
+   
     //useEffect allows you to make API requests
 
-    // passing empty array as the second argument in the useEffect bc the array is used to determine when the effect should run if empty only runs once 
+    // passing empty array as the second argument in the useEffect bc the array is used to determine when the effect should run & if empty it only runs once 
 
     function handleClick(villager) {
       setSelectedVillager(villager)
 
     }
-    
+    //setSelectedVillager is used to get individual villagers from the API.
+    //When a user clicks on a villager card, the handleClick function is called with the clicked villager as an argument, the handleclick then updates the selectedVillager state with the clicked villager using the setSelectedVillager function.
   return (
     <div>
         <div className='villagerBanner'></div>
@@ -45,7 +47,6 @@ function Villagers() {
                 <p>{villager.name['name-USen']}</p>
                 {selectedVillager && selectedVillager.id === villager.id && (
                   <div>
-                        {/* <img src= {selectedVillager.image_uri} alt={selectedVillager.name['name-USen']} /> */}
                         <VillagerDetails villager={selectedVillager}/>
                     </div>
                 )}
@@ -57,6 +58,8 @@ function Villagers() {
     </div>
   )
 }
+//conditional used for useState selectedVillager
+// if selectedVillager === villager.id it will display villager details fetched from API
 
 
 export default Villagers;
