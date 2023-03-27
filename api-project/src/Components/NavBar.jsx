@@ -9,6 +9,8 @@ function NavBar() {
 
   return (
     <div className='phone-menu'>
+       
+       
       <div className='phone-menu-name'>{activeLink}</div>
       <ul className='phone-menu-list'>
         <li
@@ -108,15 +110,29 @@ function NavBar() {
           onMouseOut={() => setActiveLink('')}
         >
           <Link to='/AboutMe'>
-            <img
+            <img className='phone-menu-icon'
               src='https://avatars.githubusercontent.com/u/107443714?v=4'
               alt='About Me Icon'
             />
             
           </Link>
         </li>
+        <li className='phone-menu-item map'
+            onMouseOver={() => setActiveLink('Map')}
+            onMouseOut={() => setActiveLink('')}
+        >
+            <Link to='/Map'>
+        <img  className='phone-menu-icon' src="https://dodo.ac/np/images/e/e9/Menu_Map_NH_Icon.png" alt="" /></Link></li>
+
+        <li className='phone-menu-item rescue'
+            onMouseOver={() => setActiveLink('Rescue')}
+            onMouseOut={() => setActiveLink('')}
+         >
+            <Link to='/Rescue'>
+        <img className = 'phone-menu-icon' src="https://img.game8.co/3238218/a038ac610fff5d03cf2e5b01046758e5.png/thumb" alt="" /></Link></li>
       </ul>
     </div>
+
   );
 }
 

@@ -3,10 +3,9 @@ import React from 'react'
 function AboutMe() {
   return (
     <div>
-        <div className='banner'>
-            <img src="https://media.discordapp.net/attachments/692019678482006016/1089611305306050650/IMG_5182.jpg?width=705&height=397" alt="" />
-        </div>
-        <h1>Akili Inniss</h1>
+        <div className='aboutBanner'></div>
+        <h1 className='header'>About Me</h1>
+        <p className='pTagg'>I created this project for my Perscholas assignment. I decided to do it on Animal crossing because I thoroughly enjoy the game. My LinkedIn and Github links are below. My Friend Code is also below if you want to visit my island</p>
         <h2>Github</h2>
         <img className='portfolioImg' src='https://avatars.githubusercontent.com/u/107443714?v=4'/>
         <a href='https://github.com/Keelsthegreat'>Github Link</a>

@@ -27,27 +27,32 @@ function Villagers() {
     }
     
   return (
-    <div className='villagers-grid'>
-        <div className='banner'>
-            <img src='https://media.discordapp.net/attachments/692019678482006016/1089611305540927559/IMG_5181.jpg?width=705&height=397'/>
-        </div>
-        <div className = "banner">
-          <img src =''/>
-        </div>
+    <div>
+        <div className='villagerBanner'></div>
         
+      <h1 className='header'>Villagers List</h1>
+      <p className='pTag'>Here you will find information on the villagers, birthdays, personality types, species and genders</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+        <div className='villagers-grid'>
+
        {villagerList.map((villager)=> (
-            <div className='villager-card' key={villager.id} onClick = {() => handleClick(villager)}>
+         <div className='villager-card' key={villager.id} onClick = {() => handleClick(villager)}>
                 <img className='icon' src={villager.icon_uri} alt={villager.name['name-USen']} />
                 <p>{villager.name['name-USen']}</p>
                 {selectedVillager && selectedVillager.id === villager.id && (
-                    <div>
+                  <div>
                         {/* <img src= {selectedVillager.image_uri} alt={selectedVillager.name['name-USen']} /> */}
                         <VillagerDetails villager={selectedVillager}/>
                     </div>
                 )}
             </div>
 
-         ))}
+))}
+</div>
         
     </div>
   )

@@ -9,47 +9,37 @@ function Fish() {
 
   useEffect(() => {
     async function fetchData() {
-   const response = await axios.get('https://acnhapi.com/v1a/fish')
-       //api link ^
-       setFishList(Object.values(response.data))
-       console.log(fishList)
+      const response = await axios.get('https://acnhapi.com/v1a/fish')
+      setFishList(Object.values(response.data))
     }
     fetchData()
-    
-  
   }, []);
 
-// useEffect allows you to make API request
+  function handleClick(fish) {
+    setSelectedFish(fish)
+  }
 
-// passing empty array as the second argument in the useEffect bc the array is used to determine when the effect should run if empty only runs once
-
-
-function handleClick(fish) {
-  setSelectedFish(fish)
-}
   return (
-    <div className='villagers-grid'>
-      <div className = "banner">
-
-      <img  src='https://media.discordapp.net/attachments/692019678482006016/1089611269688012942/IMG_5192.jpg?width=705&height=397'/>
+    <div>
+      <div className="fishBanner"></div>
+      <h1 className='header'>Fish</h1>
+      <h3 className='pTag'> Here You'll find infromation on fish spawn times, seasons,locations, rarity and prices</h3>
+      <div className='fish-grid'>
+        <ul className='insect-grid'>
+          {fishList.map((fish) => (
+            <li key={fish.id} onClick={() => handleClick(fish)}>
+              <img className='insect-icon' src={fish.icon_uri} alt={fish.name['name-USen']} />
+              {selectedFish && selectedFish.id === fish.id && (
+                <div>
+                  <FishDetails fish={selectedFish} />
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
-      <h1>Fish</h1>
-      <ul className='grid'>
-        {fishList.map((fish)=> (
-          <li key={fish.id} onClick = {() =>
-          handleClick(fish)}>
-            <img className='icon' src={fish.icon_uri} alt={fish.name['name-USen']}/>
-            {selectedFish && selectedFish.id === fish.id && (
-              <div>
-                <FishDetails fish={selectedFish}/>
-              </div>
-            )}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
-// use object.values allows us to transfer API data into an array of fish objects.
-// the axios and get request returns an objects corresponding to the IDs so we use object.value to extract just the values of the object which gives us an array.
-export default Fish;  
+
+export default Fish;

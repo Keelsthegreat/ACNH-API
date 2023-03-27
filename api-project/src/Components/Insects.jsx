@@ -30,11 +30,9 @@ function handleClick(bug) {
     <section className = "insects-page">
 
     <div>
-        <div className='banner'>
-            <img src='https://cdn.discordapp.com/attachments/692019678482006016/1089611270640115722/IMG_5189.jpg'/>
-        </div>
-     <h1>Insects</h1>
-     <h3> Here You'll find infromation on insects spawn time, seasons,locations, rarity and prices.</h3>
+        <div className='insectBanner'></div>
+     <h1 className='header'>Insects</h1>
+     <h3 className='pTag'> Here You'll find infromation on insects spawn time, seasons,locations, rarity and prices.</h3>
      <ul className = "insect-grid">
         {insect.map((bug)=>(
             <li key={bug.id} onClick = {() =>

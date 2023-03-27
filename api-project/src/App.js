@@ -1,4 +1,4 @@
-
+import './acnh.otf'
 import './App.css';
 import Fish from './Components/Fish'
 import Insects from './Components/Insects';

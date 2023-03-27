@@ -33,12 +33,10 @@ function Art() {
 
   return (
     <div className="carousel">
-      <div className = "banner">
-         <img src="https://images-ext-1.discordapp.net/external/TKN48jxMlKCg4MwfCR2HfEEW2YVkO8rCfMxKAq6g8hM/https/static1.thegamerimages.com/wordpress/wp-content/uploads/2020/06/Garden-Museum-via-Reddit.jpg?width=705&height=371" alt="" />
+      <div className = "artBanner"></div>
 
-      </div>
-
-      
+      <h1 className='header'>List of Art</h1>
+      <p className='pTag'>Here you will find information of art prices and a description.</p>
       
       <ul className="carousel__slides">
         {artList.map((art, index) => (
@@ -53,24 +51,14 @@ function Art() {
         ))}
       </ul>
       <button className="carousel__button--prev" onClick={handlePrevClick}>
-        &lsaquo;
+        {'<'}
       </button>
       <button className="carousel__button--next" onClick={handleNextClick}>
-        &rsaquo;
+        {'>'}
       </button>
-      <div className="carousel__indicators">
-        {artList.map((art, index) => (
-          <button
-            className={`carousel__indicator ${
-              index === activeIndex ? 'carousel__indicator--active' : ''
-            }`}
-            key={art.id}
-            onClick={() => setActiveIndex(index)}
-          />
-        ))}
-      </div>
+     
       {selectedArt && (
-        <div>
+        <div className= "speech_bubble">
           <ArtDetails art={selectedArt} />
         </div>
       )}

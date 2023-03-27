@@ -1,6 +1,11 @@
+@font-face {
+  font-family:"acnh";
+  src: url("acnh.otf");
+}
+ 
 body {
   background-image: url('https://pbs.twimg.com/media/EQYAiJ1UwAEeNOM.jpg');
-  
+ font-family: 'acnh';
 }
 
 .phone-menu {
@@ -14,11 +19,11 @@ body {
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  font-family: 'FinkHeavy', Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
- 
+  border: 12px solid rgb(45, 45, 45);
+  margin-left: 12px;
   
 }
 
@@ -33,6 +38,7 @@ body {
   height: 300px;
   margin-bottom: 65px;
   gap: 15px;
+  
 }
 
 .phone-menu-item {
@@ -47,10 +53,10 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-size: 20px;
-  font-family: 'acnh';
   color: #6d4c41;
   transition: transform 0.2s ease-in-out;
   height: 86px;
+  
 }
 
 .phone-menu-item:hover {
@@ -74,7 +80,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin-top: 12px;
-  
+
 }
 
 
@@ -86,7 +92,7 @@ body {
    /* Gap between columns and rows */
   width: 65%;
   height: auto;
-  margin-left: 26%;
+  margin-left: 18%;
  
 }
 
@@ -166,6 +172,7 @@ body {
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  
 }
 
 .carousel__button--prev {
@@ -222,6 +229,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 34px;
 }
 
 .insect-grid li {
@@ -240,4 +248,128 @@ body {
 }
 
 
+
+.villagerBanner {
+ position:absolute;
+ top:0;
+ right:0;
+ width: 82.8%;
+ height: 30%;
+ background-image: url('https://media.discordapp.net/attachments/692019678482006016/1089611305540927559/IMG_5181.jpg?width=705&height=397');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 25px;
+}
+
+.seaBanner {
+  
+    position:absolute;
+    top:0;
+    right:0;
+    width: 82.8%;
+    height: 30%;
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/07/Animal-Crossing-swimming.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+  
+}
+
+.insectBanner {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 82.8%;
+  height: 30%;
+  background-image: url('https://cdn.discordapp.com/attachments/692019678482006016/1089611270640115722/IMG_5189.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ border-radius: 25px;
+}
+
+.homeBanner {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 82.8%;
+  height: 30%;
+  background-image: url('https://images-ext-2.discordapp.net/external/yp5Kn5VPhB6O6JZeBtBB6yftc9-lILifOwhI6RatBOo/https/acnh.co/assets/img/animal-crossing-villagers.jpg?width=705&height=397');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  
+}
+
+.fishBanner {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 82.8%;
+  height: 30%;
+  background-image: url('https://media.discordapp.net/attachments/692019678482006016/1089611269688012942/IMG_5192.jpg?width=705&height=397');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+ 
+}
+
+.artBanner {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 82.8%;
+  height: 30%;
+  background-image: url("https://images-ext-1.discordapp.net/external/TKN48jxMlKCg4MwfCR2HfEEW2YVkO8rCfMxKAq6g8hM/https/static1.thegamerimages.com/wordpress/wp-content/uploads/2020/06/Garden-Museum-via-Reddit.jpg?width=705&height=371");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+
+}
+
+.aboutBanner {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 82.8%;
+  height: 30%;
+  background-image: url("https://media.discordapp.net/attachments/692019678482006016/1089611305306050650/IMG_5182.jpg?width=705&height=397");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  
+}
+
+.header {
+text-align: center;
+font-size: 50px;
+}
+
+.pTag {
+text-align: center;
+font-size: 30px;
+}
+
+.pTagg {
+  text-align: center;
+  font-size: 22px;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 1;
+}
 
